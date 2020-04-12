@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-Hooker/static/css/main.9e26689c.chunk.css",
+    "main.js": "/React-Hooker/static/js/main.1f743782.chunk.js",
+    "main.js.map": "/React-Hooker/static/js/main.1f743782.chunk.js.map",
+    "runtime-main.js": "/React-Hooker/static/js/runtime-main.710705ed.js",
+    "runtime-main.js.map": "/React-Hooker/static/js/runtime-main.710705ed.js.map",
+    "static/css/2.0c90e7c6.chunk.css": "/React-Hooker/static/css/2.0c90e7c6.chunk.css",
+    "static/js/2.c182eab9.chunk.js": "/React-Hooker/static/js/2.c182eab9.chunk.js",
+    "static/js/2.c182eab9.chunk.js.map": "/React-Hooker/static/js/2.c182eab9.chunk.js.map",
+    "index.html": "/React-Hooker/index.html",
+    "precache-manifest.e513b186f31e4b34afabc0978e96c1e8.js": "/React-Hooker/precache-manifest.e513b186f31e4b34afabc0978e96c1e8.js",
+    "service-worker.js": "/React-Hooker/service-worker.js",
+    "static/css/2.0c90e7c6.chunk.css.map": "/React-Hooker/static/css/2.0c90e7c6.chunk.css.map",
+    "static/css/main.9e26689c.chunk.css.map": "/React-Hooker/static/css/main.9e26689c.chunk.css.map",
+    "static/js/2.c182eab9.chunk.js.LICENSE.txt": "/React-Hooker/static/js/2.c182eab9.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/React-Hooker/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.710705ed.js",
+    "static/css/2.0c90e7c6.chunk.css",
+    "static/js/2.c182eab9.chunk.js",
+    "static/css/main.9e26689c.chunk.css",
+    "static/js/main.1f743782.chunk.js"
+  ]
+}
