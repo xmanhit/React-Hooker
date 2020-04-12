@@ -7,7 +7,7 @@ import "../Detail.css";
 const initialState = {
   loading: true,
   data: {},
-  errorMessage: null
+  errorMessage: false
 };
 
 const reducer = (state, action) => {
@@ -16,7 +16,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         loading: true,
-        errorMessage: null
+        errorMessage: false
       };
     case "DETAIL_MOVIES_SUCCESS":
       return {

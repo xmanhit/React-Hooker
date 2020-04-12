@@ -15,7 +15,7 @@ const MOVIE_API_URL = `https://www.omdbapi.com/?apikey=4a3b711b&s=${searchDefaul
 const initialState = {
   loading: true,
   data: {},
-  errorMessage: null
+  errorMessage: false
 };
 
 
@@ -25,7 +25,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         loading: true,
-        errorMessage: null
+        errorMessage: false
       };
     case "SEARCH_MOVIES_SUCCESS":
       return {
