@@ -150,7 +150,7 @@ const App = () => {
           <div className="errorMessage">{errorMessage}</div>
         ) : (
           data.movies.map((movie, index) => (
-            <Link key={`${index}-${movie.Title}`} className="movie" to={`/review/${movie.imdbID}`}>
+            <Link key={`${index}-${movie.Title}`} className="movie" to={`/React-Hooker/review/${movie.imdbID}`}>
               <Movie movie={movie} />
             </Link>
           ))

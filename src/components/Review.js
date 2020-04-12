@@ -1,6 +1,7 @@
 import React, { useReducer, useEffect } from "react";
 import Header from "./Header";
 import Detail from "./Detail";
+import Error from "./Error";
 import "../Detail.css";
 
 const initialState = {
@@ -50,7 +51,10 @@ const Review = ({ match: { params } }) => {
         });
       });
   }, [DETAIL_MOVIE_API_URL]);
+
+
   const { data, errorMessage, loading } = state;
+
   return (
     <div className="Detail">
       <Header text="Movie Review" />
@@ -70,7 +74,7 @@ const Review = ({ match: { params } }) => {
         )}
       </div>
     </div>
-  );
+  ) || <Error error={{number: 404, name: "NOT FOUND"}} />;
 };
 
 export default Review;
