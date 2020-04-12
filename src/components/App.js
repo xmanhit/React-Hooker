@@ -4,6 +4,7 @@ import Pagination from "react-js-pagination";
 import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
+import Error from "./Error";
 import "../App.css";
 
 const searchDefault = "Spider Man";
@@ -167,7 +168,7 @@ const App = () => {
         </div>
       )}
     </div>
-  );
+  ) || <Error error={{number: 404, name: "NOT FOUND"}} />;
 };
 
 export default App;
