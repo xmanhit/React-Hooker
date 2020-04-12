@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/React-Hooker/static/css/main.286e7ca8.chunk.css",
-    "main.js": "/React-Hooker/static/js/main.8c3dfc0b.chunk.js",
-    "main.js.map": "/React-Hooker/static/js/main.8c3dfc0b.chunk.js.map",
-    "runtime-main.js": "/React-Hooker/static/js/runtime-main.710705ed.js",
-    "runtime-main.js.map": "/React-Hooker/static/js/runtime-main.710705ed.js.map",
+    "main.css": "/React-Hooker/static/css/main.b841d988.chunk.css",
+    "main.js": "/React-Hooker/static/js/main.38ede18b.chunk.js",
+    "main.js.map": "/React-Hooker/static/js/main.38ede18b.chunk.js.map",
+    "runtime-main.js": "/React-Hooker/static/js/runtime-main.eb4041c4.js",
+    "runtime-main.js.map": "/React-Hooker/static/js/runtime-main.eb4041c4.js.map",
     "static/css/2.0c90e7c6.chunk.css": "/React-Hooker/static/css/2.0c90e7c6.chunk.css",
-    "static/js/2.76ad7220.chunk.js": "/React-Hooker/static/js/2.76ad7220.chunk.js",
-    "static/js/2.76ad7220.chunk.js.map": "/React-Hooker/static/js/2.76ad7220.chunk.js.map",
+    "static/js/2.5f144a17.chunk.js": "/React-Hooker/static/js/2.5f144a17.chunk.js",
+    "static/js/2.5f144a17.chunk.js.map": "/React-Hooker/static/js/2.5f144a17.chunk.js.map",
     "index.html": "/React-Hooker/index.html",
-    "precache-manifest.69ce2417cb1b256f1fccdbe89defa92f.js": "/React-Hooker/precache-manifest.69ce2417cb1b256f1fccdbe89defa92f.js",
+    "precache-manifest.1699b047a3840782468847eac4b5d80c.js": "/React-Hooker/precache-manifest.1699b047a3840782468847eac4b5d80c.js",
     "service-worker.js": "/React-Hooker/service-worker.js",
     "static/css/2.0c90e7c6.chunk.css.map": "/React-Hooker/static/css/2.0c90e7c6.chunk.css.map",
-    "static/css/main.286e7ca8.chunk.css.map": "/React-Hooker/static/css/main.286e7ca8.chunk.css.map",
-    "static/js/2.76ad7220.chunk.js.LICENSE.txt": "/React-Hooker/static/js/2.76ad7220.chunk.js.LICENSE.txt",
+    "static/css/main.b841d988.chunk.css.map": "/React-Hooker/static/css/main.b841d988.chunk.css.map",
+    "static/js/2.5f144a17.chunk.js.LICENSE.txt": "/React-Hooker/static/js/2.5f144a17.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/React-Hooker/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.710705ed.js",
+    "static/js/runtime-main.eb4041c4.js",
     "static/css/2.0c90e7c6.chunk.css",
-    "static/js/2.76ad7220.chunk.js",
-    "static/css/main.286e7ca8.chunk.css",
-    "static/js/main.8c3dfc0b.chunk.js"
+    "static/js/2.5f144a17.chunk.js",
+    "static/css/main.b841d988.chunk.css",
+    "static/js/main.38ede18b.chunk.js"
   ]
 }
