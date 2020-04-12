@@ -9,7 +9,7 @@ const Detail = ({ data }) => {
     <div className="container">
       <div className="page">
         <div className="breadcrumbs">
-          <a href="/">Home</a>
+          <a href="/React-Hooker/">Home</a>
           <i className="fa fa-angle-right mx-2" aria-hidden="true"></i>
           <span>Movie Review</span>
           <i className="fa fa-angle-right mx-2" aria-hidden="true"></i>
@@ -19,7 +19,7 @@ const Detail = ({ data }) => {
         <div className="content">
           <div className="row">
             <div className="col-md-4">
-              <figure className="movie-poster"><img src={poster} alt="#"/></figure>
+              <figure className="movie-poster"><img src={poster} alt={data.Title}/></figure>
             </div>
             <div className="col-md-8">
               <h2 className="movie-title">{data.Title}</h2>
@@ -70,7 +70,7 @@ const Detail = ({ data }) => {
         </div>
       </div>
     </div>
-  );
+  ) || null;
 };
 
 export default Detail;
