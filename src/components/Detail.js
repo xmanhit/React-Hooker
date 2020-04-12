@@ -9,7 +9,7 @@ const Detail = ({ data }) => {
     <div className="container">
       <div className="page">
         <div className="breadcrumbs">
-          <a href="/">Home</a>
+          <a href="/React-Hooker/">Home</a>
           <i className="fa fa-angle-right mx-2" aria-hidden="true"></i>
           <span>Movie Review</span>
           <i className="fa fa-angle-right mx-2" aria-hidden="true"></i>
