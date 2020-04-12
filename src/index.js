@@ -2,21 +2,34 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
+  Switch,
   Route
 } from 'react-router-dom';
+
+
 
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 import Review from './components/Review';
+import NoMatch from './components/Error404'
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render((
-  <Router>
-    <Route exact path="/React-Hooker/" component={App} />
-    <Route path="/React-Hooker/review/:id" component={Review} />
+  <Router basename="/React-Hooker">
+    <Switch>
+      <Route exact path="/">
+        <App />
+      </Route>
+
+      <Route path="/review/:id" component={Review} />
+
+      <Route>
+        <NoMatch />
+      </Route>
+    </Switch>
   </Router>
 ), document.getElementById('root'));
 

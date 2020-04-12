@@ -4,7 +4,6 @@ import Pagination from "react-js-pagination";
 import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
-import Error from "./Error";
 import "../App.css";
 
 const searchDefault = "Spider Man";
@@ -57,20 +56,20 @@ const App = () => {
   useEffect(() => {
     
     fetch(MOVIE_API_URL)
-        .then(response => response.json())
-        .then(jsonResponse => {
-    
-        dispatch({
-          type: "SEARCH_MOVIES_SUCCESS",
-          payload: {
-            movies: jsonResponse.Search,
-            activePage: 1,
-            totalCount: parseInt(jsonResponse.totalResults),
-            searchValue: searchDefault
-          }
-        });
+      .then(response => response.json())
+      .then(jsonResponse => {
+  
+      dispatch({
+        type: "SEARCH_MOVIES_SUCCESS",
+        payload: {
+          movies: jsonResponse.Search,
+          activePage: 1,
+          totalCount: parseInt(jsonResponse.totalResults),
+          searchValue: searchDefault
+        }
+      });
     });
-  }, []);
+  });
 
   const search = searchValue => {
     dispatch({
@@ -97,8 +96,8 @@ const App = () => {
         });
       } else {
         dispatch({
-            type: "SEARCH_MOVIES_FAILURE",
-            error: jsonResponse.Error
+          type: "SEARCH_MOVIES_FAILURE",
+          error: jsonResponse.Error
         });
       }
     });
@@ -133,7 +132,6 @@ const App = () => {
       }
     });
   }
-  // debugger;
   return (
     <div className="App">
       <Header text="Search Films" />
@@ -150,7 +148,7 @@ const App = () => {
           <div className="errorMessage">{errorMessage}</div>
         ) : (
           data.movies.map((movie, index) => (
-            <Link key={`${index}-${movie.Title}`} className="movie" to={`/React-Hooker/review/${movie.imdbID}`}>
+            <Link key={`${index}-${movie.Title}`} className="movie" to={`/review/${movie.imdbID}`}>
               <Movie movie={movie} />
             </Link>
           ))
@@ -168,7 +166,6 @@ const App = () => {
         </div>
       )}
     </div>
-  ) || <Error error={{number: 404, name: "NOT FOUND"}} />;
+  );
 };
-
 export default App;

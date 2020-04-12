@@ -1,7 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import Header from "./Header";
 import Detail from "./Detail";
-import Error from "./Error";
 import "../Detail.css";
 
 const initialState = {
@@ -41,16 +40,16 @@ const Review = ({ match: { params } }) => {
   const DETAIL_MOVIE_API_URL = `https://www.omdbapi.com/?apikey=4a3b711b&i=${id}`;
 
   useEffect(() => {
-      fetch(DETAIL_MOVIE_API_URL)
-        .then(response => response.json())
-        .then(jsonResponse => {
-    
-        dispatch({
-          type: "DETAIL_MOVIES_SUCCESS",
-          payload: jsonResponse
-        });
+    fetch(DETAIL_MOVIE_API_URL)
+      .then(response => response.json())
+      .then(jsonResponse => {
+  
+      dispatch({
+        type: "DETAIL_MOVIES_SUCCESS",
+        payload: jsonResponse
       });
-  }, [DETAIL_MOVIE_API_URL]);
+    });
+  });
 
 
   const { data, errorMessage, loading } = state;
@@ -74,7 +73,6 @@ const Review = ({ match: { params } }) => {
         )}
       </div>
     </div>
-  ) || <Error error={{number: 404, name: "NOT FOUND"}} />;
+  );
 };
-
 export default Review;
