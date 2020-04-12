@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route
 } from 'react-router-dom';
 
@@ -15,8 +15,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render((
   <Router>
-    <Route exact path="/" component={App} />
-    <Route path="/review/:id" component={Review} />
+    <Route exact path="/React-Hooker/" component={App} />
+    <Route path="/React-Hooker/review/:id" component={Review} />
   </Router>
 ), document.getElementById('root'));
 

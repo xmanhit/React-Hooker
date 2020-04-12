@@ -10,7 +10,6 @@ const searchDefault = "Spider Man";
 
 const MOVIE_API_URL = `https://www.omdbapi.com/?apikey=4a3b711b&s=${searchDefault}`;
 
-
 const initialState = {
   loading: true,
   data: {},
@@ -52,7 +51,7 @@ const reducer = (state, action) => {
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-
+  debugger
   useEffect(() => {
     
     fetch(MOVIE_API_URL)
@@ -149,7 +148,7 @@ const App = () => {
           <div className="errorMessage">{errorMessage}</div>
         ) : (
           data.movies.map((movie, index) => (
-            <Link key={`${index}-${movie.Title}`} className="movie" to={`/review/${movie.imdbID}`}>
+            <Link key={`${index}-${movie.Title}`} className="movie" to={`/React-Hooker/review/${movie.imdbID}`}>
               <Movie movie={movie} />
             </Link>
           ))
