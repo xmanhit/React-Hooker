@@ -18,7 +18,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render((
-  <Router basename="/React-Hooker">
+  <Router>
     <Switch>
       <Route exact path="/" component={App} />
 
