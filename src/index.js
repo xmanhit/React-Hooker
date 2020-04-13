@@ -24,7 +24,7 @@ ReactDOM.render((
 
       <Route exact  path="/review/:id" component={Review} />
 
-      <Route exact>
+      <Route>
         <NoMatch error={{ number: 404, text: "Page doesn't exist" }} />
       </Route>
     </Switch>

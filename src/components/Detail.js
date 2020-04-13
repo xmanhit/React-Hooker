@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 const DEFAULT_PLACEHOLDER_IMAGE = "https://img.icons8.com/plasticine/400/000/image-file.png";
 
@@ -9,7 +10,7 @@ const Detail = ({ data }) => {
     <div className="container">
       <div className="page">
         <div className="breadcrumbs">
-          <a href="/React-Hooker/">Home</a>
+          <Link to="/">Home</Link>
           <i className="fa fa-angle-right mx-2" aria-hidden="true"></i>
           <span>Movie Review</span>
           <i className="fa fa-angle-right mx-2" aria-hidden="true"></i>

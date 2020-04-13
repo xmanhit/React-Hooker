@@ -49,7 +49,7 @@ const Review = ({ match: { params } }) => {
         payload: jsonResponse
       });
     });
-  });
+  }, [DETAIL_MOVIE_API_URL]);
 
 
   const { data, errorMessage, loading } = state;
