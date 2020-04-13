@@ -69,7 +69,10 @@ const App = () => {
         }
       });
     });
-  }, []);
+    return () => {
+      console.log(state);
+    }
+  }, [state]);
 
   const search = searchValue => {
     dispatch({
