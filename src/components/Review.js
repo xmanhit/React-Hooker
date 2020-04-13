@@ -51,7 +51,6 @@ const Review = ({ match: { params } }) => {
     });
   }, [DETAIL_MOVIE_API_URL]);
 
-
   const { data, errorMessage, loading } = state;
 
   return (
