@@ -11,7 +11,7 @@ import {
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 import Review from './components/Review';
-import NoMatch from './components/Error404'
+import NoMatch from './components/Errors'
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,14 +20,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render((
   <Router basename="/React-Hooker">
     <Switch>
-      <Route exact path="/">
-        <App />
-      </Route>
+      <Route exact path="/" component={App} />
 
-      <Route path="/review/:id" component={Review} />
+      <Route exact  path="/review/:id" component={Review} />
 
-      <Route>
-        <NoMatch />
+      <Route exact>
+        <NoMatch error={{ number: 404, text: "Page doesn't exist" }} />
       </Route>
     </Switch>
   </Router>
