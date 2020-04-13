@@ -6,6 +6,7 @@ const DEFAULT_PLACEHOLDER_IMAGE = "https://img.icons8.com/plasticine/400/000/ima
 
 const Detail = ({ data }) => {
   const poster = (data.Poster === "N/A") ? DEFAULT_PLACEHOLDER_IMAGE : data.Poster;
+
   return (
     <div className="container">
       <div className="page">
@@ -47,6 +48,11 @@ const Detail = ({ data }) => {
                 <li><strong>Directors:</strong> { data.Director }</li>
                 <li><strong>Writers:</strong> { data.Writer }</li>
                 <li><strong>Actors:</strong> {data.Actors}</li>
+                {(data.Website !== "N/A") && (
+                  <li>
+                    <strong>Website: </strong> <a href={data.Website}>{data.Website}</a>
+                  </li>
+                )}
               </ul>
             </div>
           </div>
