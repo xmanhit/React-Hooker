@@ -24,7 +24,7 @@ ReactDOM.render((
       <Route exact  path="/review/:id" component={Review} />
 
       <Route>
-        <Errors error={{ number: 404, text: "Page doesn't exist" }} />
+        <Errors error={{ number: 404, text: "NOT FOUND" }} />
       </Route>
     </Switch>
   </Router>
