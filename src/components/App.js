@@ -133,14 +133,14 @@ const App = () => {
     });
   }
 
-
+debugger
   return (
     <div className="App">
       <Header text="Search Films" />
       <Search search={search} />
       <p className="App-intro">Sharing a few of our favourite movies</p>
       <div className="movies">
-        {loading && !errorMessage ? (
+        {(loading && !errorMessage) ? (
           <div className="text-center col-12">
             <div className="spinner-grow" role="status">
               <span className="sr-only">Loading...</span>
@@ -158,16 +158,17 @@ const App = () => {
       </div>
       {(!loading && !errorMessage) && (
         <div align="center">
-          <Pagination
+          {/* <Pagination
             activePage={data.activePage}
             itemsCountPerPage={10}
             totalItemsCount={data.totalCount || 1}
             pageRangeDisplayed={5}
             onChange={handlePageChange}
-          />
+          /> */}
         </div>
       )}
     </div>
   );
 };
+debugger
 export default App;
