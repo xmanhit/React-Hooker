@@ -11,7 +11,7 @@ import {
 // import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 import Review from './components/Review';
-import NoMatch from './components/Errors'
+import Errors from './components/Errors'
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,11 +21,10 @@ ReactDOM.render((
   <Router>
     <Switch>
       <Route exact path="/" component={App} />
-
       <Route exact  path="/review/:id" component={Review} />
-
+      
       <Route>
-        <NoMatch error={{ number: 404, text: "Page doesn't exist" }} />
+        <Errors error={{ number: 404, text: "Page doesn't exist" }} />
       </Route>
     </Switch>
   </Router>

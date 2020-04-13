@@ -3,6 +3,7 @@ import Header from "./Header";
 import Detail from "./Detail";
 import "../Detail.css";
 
+
 const initialState = {
   loading: true,
   data: {},
@@ -33,6 +34,7 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
 
 const Review = ({ match: { params } }) => {
   const { id } = params;
@@ -74,4 +76,5 @@ const Review = ({ match: { params } }) => {
     </div>
   );
 };
+
 export default Review;
