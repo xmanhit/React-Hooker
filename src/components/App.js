@@ -50,7 +50,7 @@ const reducer = (state, action) => {
 };
 
 
-const App = () => {
+export const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
@@ -168,4 +168,4 @@ const App = () => {
     </div>
   );
 };
-export default App;
+// export default App;
