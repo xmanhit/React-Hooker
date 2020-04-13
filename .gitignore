@@ -5,7 +5,6 @@
 /node_modules
 /.pnp
 .pnp.js
-serviceWorker.js
 
 # testing
 /coverage

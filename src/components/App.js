@@ -133,7 +133,7 @@ const App = () => {
     });
   }
 
-  
+
   return (
     <div className="App">
       <Header text="Search Films" />
@@ -161,7 +161,7 @@ const App = () => {
           <Pagination
             activePage={data.activePage}
             itemsCountPerPage={10}
-            totalItemsCount={data.totalCount || 0}
+            totalItemsCount={data.totalCount || 1}
             pageRangeDisplayed={5}
             onChange={handlePageChange}
           />

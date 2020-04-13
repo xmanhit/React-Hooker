@@ -8,7 +8,7 @@ import {
 
 
 
-// import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 import Review from './components/Review';
 import Errors from './components/Errors'
@@ -30,4 +30,4 @@ ReactDOM.render((
   </Router>
 ), document.getElementById('root'));
 
-// serviceWorker.unregister();
+serviceWorker.unregister();
