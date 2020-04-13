@@ -133,7 +133,7 @@ const App = () => {
     });
   }
 
-debugger
+
   return (
     <div className="App">
       <Header text="Search Films" />
@@ -158,17 +158,17 @@ debugger
       </div>
       {(!loading && !errorMessage) && (
         <div align="center">
-          {/* <Pagination
+          <Pagination
             activePage={data.activePage}
             itemsCountPerPage={10}
             totalItemsCount={data.totalCount || 1}
             pageRangeDisplayed={5}
             onChange={handlePageChange}
-          /> */}
+          />
         </div>
       )}
     </div>
   );
 };
-debugger
+
 export default App;
