@@ -8,7 +8,7 @@ import {
 
 
 
-import * as serviceWorker from './serviceWorker';
+// import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 import Review from './components/Review';
 import NoMatch from './components/Errors'
@@ -36,4 +36,4 @@ ReactDOM.render((
 // Learn more about service workers: http://bit.ly/CRA-PWA
 
 
-serviceWorker.unregister();
+// serviceWorker.unregister();

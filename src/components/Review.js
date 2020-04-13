@@ -49,8 +49,7 @@ const Review = ({ match: { params } }) => {
         payload: jsonResponse
       });
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [DETAIL_MOVIE_API_URL]);
 
   const { data, errorMessage, loading } = state;
 
