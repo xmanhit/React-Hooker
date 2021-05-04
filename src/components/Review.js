@@ -3,7 +3,6 @@ import Header from "./Header";
 import Detail from "./Detail";
 import "../Detail.css";
 
-
 const initialState = {
   loading: true,
   data: {},
@@ -35,9 +34,8 @@ const reducer = (state, action) => {
   }
 };
 
-
-const Review = ({ match: { params } }) => {
-  const { id } = params;
+const Review = ({ location, match: { params } }) => {
+  const { id } = location.state;
   const [state, dispatch] = useReducer(reducer, initialState);
   const DETAIL_MOVIE_API_URL = `https://www.omdbapi.com/?apikey=4a3b711b&i=${id}`;
 

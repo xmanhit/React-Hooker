@@ -133,6 +133,13 @@ const App = () => {
     });
   }
 
+  const convertToSlug =(Text) => {
+    return Text
+      .toLowerCase()
+      .replace(/ /g,'-')
+      .replace(/[^\w-]+/g,'')
+      ;
+  }
 
   return (
     <div className="App">
@@ -150,7 +157,13 @@ const App = () => {
           <div className="errorMessage">{errorMessage}</div>
         ) : (
           data.movies.map((movie, index) => (
-            <Link key={`${index}-${movie.Title}`} className="movie" to={`/review/${movie.imdbID}`}>
+            <Link
+              key={`${index}-${movie.Title}`}
+              className="movie"
+              to={{
+                pathname: `/review/${convertToSlug(movie.Title)}`,
+                state: { id: movie.imdbID }
+              }}>
               <Movie movie={movie} />
             </Link>
           ))
