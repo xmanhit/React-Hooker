@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import Pagination from "react-js-pagination";
 import Header from "./Header";
 import Movie from "./Movie";
@@ -143,6 +144,12 @@ const App = () => {
 
   return (
     <div className="App">
+      <Helmet>
+        <meta name="description" content="Sharing a few of our favourite movies"/>
+        <meta name="keywords" content="Review, Movie"/>
+        <meta name="author" content="Nguyen Xuan Manh"/>
+        <title>MIT</title>
+      </Helmet>
       <Header text="Search Movies" />
       <Search search={search} />
       <p className="App-intro">Sharing a few of our favourite movies</p>

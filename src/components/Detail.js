@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 const DEFAULT_PLACEHOLDER_IMAGE = "https://img.icons8.com/plasticine/400/000/image-file.png";
@@ -9,6 +10,14 @@ const Detail = ({ data }) => {
 
   return (
     <div className="container">
+      <Helmet>
+        <meta name="description" content={ data.Plot }/>
+        <meta name="keywords" content={ data.Genre }/>
+        <meta name="author" content="Nguyen Xuan Manh"/>
+        <title>MIT: { data.Title }</title>
+      </Helmet>
+      
+
       <div className="page">
         <div className="breadcrumbs">
           <Link to="/">Home</Link>
@@ -24,7 +33,7 @@ const Detail = ({ data }) => {
               <figure className="movie-poster"><img src={poster} alt="#"/></figure>
             </div>
             <div className="col-md-8">
-              <h2 className="movie-title">{data.Title}</h2>
+              <h2 className="movie-title">{ data.Title }</h2>
               <div className="movie-plot">
                 <p>{ data.Plot }</p>
               </div>
