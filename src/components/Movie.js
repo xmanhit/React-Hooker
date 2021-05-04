@@ -18,7 +18,7 @@ const Movie = ({ movie }) => {
         }}
       >
       </div>
-      <h3 className="title overflow-ellipsis">{movie.Title}</h3>
+      <h3 className="title overflow-ellipsis" titlle={movie.Title}>{movie.Title}</h3>
       <p>({movie.Year})</p>
     </div>
   );
