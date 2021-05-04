@@ -29,16 +29,6 @@ const Detail = ({ data }) => {
                 <p>{ data.Plot }</p>
               </div>
               <ul className="movie-meta">
-                <li><strong>Rating:</strong>
-                  {
-                    data.Ratings.map((rating, index) => (
-                      <div key={index} className="rating">
-                        <strong className="Source"><i>{ rating.Source }: </i></strong>
-                        <span className="value">{rating.Value}</span>
-                      </div>
-                    ))
-                  }
-                </li>
                 <li><strong>Runtime:</strong> { data.Runtime }</li>
                 <li><strong>Released:</strong> { data.Released } ({data.Country})</li>
                 <li><strong>Category:</strong> { data.Genre }</li>
@@ -54,8 +44,22 @@ const Detail = ({ data }) => {
                   </li>
                 )}
               </ul>
+              
+              <ul className="rate">
+                <li><strong>Rating:</strong>
+                  {
+                    data.Ratings.map((rating, index) => (
+                      <div key={index} className="rating">
+                        <strong className="Source"><i>{ rating.Source }: </i></strong>
+                        <span className="value">{rating.Value}</span>
+                      </div>
+                    ))
+                  }
+                </li>
+              </ul>
             </div>
           </div>
+
           <div className="entry-content">
             <div className="row">
               <div className="col-6">
